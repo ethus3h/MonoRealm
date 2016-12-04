@@ -144,10 +144,10 @@ namespace server.@char
 
                 ret.Add(new ServerItem()
                 {
-                    Name = Program.Settings.GetValue<string>("svr" + i + "Name"),
+                    Name = Program.Settings.GetValue<string>("svr" + i + "Public"),
                     Lat = p != null ? p.Latitude : 0,
                     Long = p != null ? p.Longitude : 0,
-                    DNS = Program.Settings.GetValue<string>("svr" + i + "Adr", "127.0.0.1"),
+                    DNS = Program.Settings.GetValue<string>("svr" + i + "Adr", "24.157.190.65"),
                     Usage = usage,
                     AdminOnly = Program.Settings.GetValue<bool>("svr" + i + "Admin", "false")
                 });
